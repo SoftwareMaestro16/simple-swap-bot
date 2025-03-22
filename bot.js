@@ -9,8 +9,7 @@ bot.onText(/\/start/, (msg) => {
     const chatId = msg.chat.id;
     const photoPath = path.join(__dirname, 'banner.jpg');
 
-    const text = `Simple Swap — это децентрализованное приложение, предоставляющее возможность обмена жетонов в паре с TON на основной платформе DeDust. Оно имеет небольшое преимущество в виде сниженных комиссий, что делает процесс обмена более выгодным.`;
-        const options = {
+    const text = `Simple Swap is a decentralized application that enables token exchanges in pairs with TON on the main DeDust platform. It offers a slight advantage with lower fees, making the exchange process more cost-effective.`;        const options = {
         parse_mode: 'Markdown',
         reply_markup: {
             inline_keyboard: [
